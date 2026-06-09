@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-serif), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-sans), "Syne", sans-serif;
+  --font-body: var(--font-body), "DM Sans", sans-serif;
+
+  --color-bg-light: #FFFFFF;
+  --color-bg-offset: #F7F6F4;
+  --color-bg-dark: #0E0D0B;
+  
+  --color-brand-border: rgba(0,0,0,0.08);
+  --color-brand-border-md: rgba(0,0,0,0.15);
+  --color-brand-border-lg: rgba(0,0,0,0.25);
+  
+  --color-acc: #EE0000;
+  --color-acc-hover: #CC0000;
+  --color-acc-muted: #FFF0F0;
+  
+  --color-text-dark: #0E0D0B;
+  --color-text-muted: #555250;
+  --color-text-light: #A09D9A;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  background: #FFFFFF;
+  color: #0E0D0B;
+}
+
+/* Custom styles for animations or visual effects */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-ticker-loop {
+  display: inline-flex;
+  animation: ticker 28s linear infinite;
+}
+
+.animate-ticker-loop:hover {
+  animation-play-state: paused;
+}
