@@ -259,9 +259,7 @@ export default function Home() {
           {/* Brand Logo with exact SVG paths provided from mockup */}
           <a href="#top" className="flex items-center gap-1 group" aria-label="Pavidesignz Logo Home">
             <Logo className="h-10 w-auto text-text-dark group-hover:opacity-90 transition-opacity" />
-            <span className="font-sans font-bold text-lg tracking-wider text-text-dark ml-2 uppercase">
-              Pavi<span className="text-acc">Designz</span>
-            </span>
+           
           </a>
 
           {/* Nav middle links for Desktop clients */}
